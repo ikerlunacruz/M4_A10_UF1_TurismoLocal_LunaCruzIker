@@ -14,11 +14,13 @@ body {
 }
 
 #header {
-    height: 73vh;
+    height: 65vh;
+    width: 100%;
     background-image: url('../img/morella.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
+    object-fit: cover;
 }
 
 #header h1 {
