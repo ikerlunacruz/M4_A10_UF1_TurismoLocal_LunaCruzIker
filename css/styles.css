@@ -11,6 +11,7 @@ body {
     margin-right: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
+    background-color: antiquewhite;
 }
 
 #header {
@@ -25,8 +26,8 @@ body {
 
 #header h1 {
     color: white;
-    margin: 0;
-    padding: 0 20%;
+    margin: 2%;
+    padding:20%;
     font-size: 37px;
 }
 
@@ -55,46 +56,50 @@ body {
 /* Menú */
 .menu p {
     border: solid rgb(0, 0, 0);
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-right: 10%;
-    border-bottom: 0ch;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    border-bottom: 2%;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 /* Columnas */
+.row {
+    display: flex;
+}
 .row:after {
     content: "";
-    display: table;
+    /* display: table; */
     clear: both;
 }
 
 .column-menu {
     width: 15%;
     float: left;
-    position: fixed;
-    background-color: rgb(250, 212, 181);
-    padding-left: 1%;
-    padding-bottom: 1.5%;
-    text-align: center;
-}
-
-.column-noticias {
-    width: 30%;
-    float: right;
-    background-color: rgb(201, 53, 191);
-    padding-right: 2%;
+    background-color: rgb(244, 204, 138);
     padding-left: 2%;
-    align-items: center;
+    padding-bottom: 2%;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .column-central {
     width: 55%;
     float: left;
-    padding-right: 0%;
-    margin-left: 15%;
+    padding-right: 2%;
+}
+
+.column-noticias {
+    width: 30%;
+    float: left;
+    background-color: rgb(241, 203, 142);
+    padding-right: 2%;
+    padding-left: 2%;
+    align-items: center;
 }
 
 .column-central p {
@@ -114,17 +119,16 @@ body {
 .cont-img {
     display: flex;
     width: 85%;
-    margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: 3px;
+    border-radius: 2%;
 }
 
 .cont-imagenes .img {
     width: 32.5%;
     position: relative;
     height: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 2%;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 75);
 }
 
@@ -137,7 +141,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     #header h1 {
-        padding: 0 1%;
+        padding: 2%;
         font-size: 40px;
     }
     .column-menu {
@@ -146,7 +150,7 @@ body {
     }
 
     .column-menu p {
-        margin-right: 1%;
+        margin-right: 2%;
     }
 
     .column-noticias {
@@ -155,7 +159,7 @@ body {
 
     .column-central {
         width: 100%;
-        margin-left: 0%;
+        margin-left: 2%;
     }
 
     iframe {
